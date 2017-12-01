@@ -1,15 +1,8 @@
 const httpBack = require('../http');
 
-export function getNewStoriesIds() {
+export function getTodoList() {
   return httpBack({
     method: 'GET',
-    url: 'newstories.json'
-  });
-}
-
-export function getNewStory(id) {
-  return httpBack({
-    method: 'GET',
-    url: 'item/' + id + '.json'
+    url: 'todos'
   });
 }
