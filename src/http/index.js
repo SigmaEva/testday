@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-let SRC_URL = 'http://todo-backed-sintara.herokuapp.com/';
+let SRC_URL = 'http://todo-backend-sinatra.herokuapp.com/';
 
 const httpBack = axios.create({
   baseURL: SRC_URL

@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom'
 import Header from './components/Header';
 import TodoList from './components/TodoList';
+import Auth from './services/Auth/auth.js';
+
+// const auth = new Auth();
+// auth.login();
 
 require('./styles/main.scss');
 
@@ -13,7 +17,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      news: props.news,
+      todos: props.todos,
     };
   }
 
